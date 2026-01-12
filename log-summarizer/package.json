@@ -1,0 +1,22 @@
+{
+  "name": "log-summarizer",
+  "version": "0.1.0",
+  "description": "Terminal canvas for pasting and summarizing logs with Claude",
+  "type": "module",
+  "main": "src/cli.ts",
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "show": "bun run src/cli.ts show",
+    "spawn": "bun run src/cli.ts spawn"
+  },
+  "dependencies": {
+    "ink": "^6.0.0",
+    "react": "^19.0.0",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.0.0",
+    "bun-types": "^1.0.0"
+  }
+}

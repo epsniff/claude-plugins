@@ -1,0 +1,8 @@
+{
+  "name": "log-summarizer",
+  "description": "Terminal canvas for pasting and summarizing logs with Claude. Opens a canvas where users paste logs, then spawns a subagent to summarize them.",
+  "version": "0.1.0",
+  "author": {
+    "name": "User"
+  }
+}

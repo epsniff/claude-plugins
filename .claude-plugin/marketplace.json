@@ -1,0 +1,19 @@
+{
+  "name": "epsniff-claude-plugins",
+  "owner": {
+    "name": "epsniff",
+    "email": "esniff@antfly.io"
+  },
+  "metadata": {
+    "description": "Custom Claude Code plugins by epsniff"
+  },
+  "plugins": [
+    {
+      "name": "log-summarizer",
+      "source": "./log-summarizer",
+      "description": "Terminal canvas for pasting and summarizing logs with Claude subagent",
+      "version": "0.1.0",
+      "strict": false
+    }
+  ]
+}
