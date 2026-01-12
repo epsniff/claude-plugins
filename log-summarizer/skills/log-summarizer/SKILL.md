@@ -14,18 +14,18 @@ A terminal canvas for pasting log content and submitting it to Claude for summar
 
 When the user wants to paste and summarize logs, follow these steps:
 
-### Step 1: Spawn the Canvas
+### Step 1: Show the Canvas
 
-Run this command to open the log summarizer in a split pane:
+Run this command to open the log summarizer inline in the current terminal:
 
 ```bash
-${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh spawn
+${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh show
 ```
 
 ### Step 2: Inform the User
 
 Tell the user:
-> "I've opened a log viewer in a split pane. Paste your logs there using Cmd+V, then press Enter when ready. The canvas will highlight errors, warnings, and timestamps for easier reading."
+> "I've opened a log viewer. Paste your logs using Cmd+V, then press Enter when ready. The canvas will highlight errors, warnings, and timestamps for easier reading."
 
 ### Step 3: Wait for Submission
 
@@ -135,9 +135,9 @@ interface LogSubmissionResult {
 **User**: "I have some error logs I need help with"
 
 **Assistant**: "I'll open a log viewer for you."
-*Runs: `${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh spawn`*
+*Runs: `${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh show`*
 
-"I've opened a log viewer in a split pane. Paste your logs there using Cmd+V, then press Enter when ready."
+"I've opened a log viewer. Paste your logs using Cmd+V, then press Enter when ready."
 
 *User pastes logs and presses Enter*
 

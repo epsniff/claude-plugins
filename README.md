@@ -23,7 +23,7 @@ claude plugin install log-summarizer@epsniff-claude-plugins
 A terminal canvas for pasting and summarizing logs with Claude.
 
 **Features:**
-- Opens in iTerm2/tmux split pane
+- Opens inline in Claude Code's TUI
 - Syntax highlighting for errors, warnings, timestamps, JSON
 - Scrollable log viewer
 - Subagent-based summarization (keeps primary context clean)
