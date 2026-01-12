@@ -19,7 +19,7 @@ When the user wants to paste and summarize logs, follow these steps:
 Run this command to open the log summarizer in a split pane:
 
 ```bash
-~/.claude/plugins/local/log-summarizer/run-log-summarizer.sh spawn
+${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh spawn
 ```
 
 ### Step 2: Inform the User
@@ -135,7 +135,7 @@ interface LogSubmissionResult {
 **User**: "I have some error logs I need help with"
 
 **Assistant**: "I'll open a log viewer for you."
-*Runs: `~/.claude/plugins/local/log-summarizer/run-log-summarizer.sh spawn`*
+*Runs: `${CLAUDE_PLUGIN_ROOT}/run-log-summarizer.sh spawn`*
 
 "I've opened a log viewer in a split pane. Paste your logs there using Cmd+V, then press Enter when ready."
 
