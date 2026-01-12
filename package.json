@@ -1,0 +1,22 @@
+{
+  "name": "epsniff-claude-plugins",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "workspaces": ["log-summarizer"],
+  "scripts": {
+    "start": "bun run log-summarizer/src/cli.ts",
+    "show": "bun run log-summarizer/src/cli.ts show",
+    "spawn": "bun run log-summarizer/src/cli.ts spawn"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "ink": "^6.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.0.0"
+  }
+}
